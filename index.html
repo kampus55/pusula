@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101b2d"><title>PUSULA — Eğitim ve Kariyer Koçluğu</title>
+
+<style>
+
+:root{--bg:#f4f5f7;--card:#fff;--ink:#182335;--muted:#6d7787;--navy:#101b2d;--gold:#c8a96e;--line:#e5e8ed;--shadow:0 10px 28px #17223512}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}button,input,select{font:inherit}button{border:0;cursor:pointer}.app{padding-bottom:80px}.top{position:sticky;top:0;z-index:5;background:#101b2df5;color:#fff;padding:13px 18px}.topin,main{max-width:920px;margin:auto}.topin{display:flex;justify-content:space-between;align-items:center}.brand{font-size:27px;font-weight:950;letter-spacing:1px;color:#f0dfbd}.brand .p,.brand .a{border-bottom:3px solid var(--gold);padding-bottom:1px}.brand small{display:block;font-size:9px;letter-spacing:1.7px;color:#dfc99c}main{padding:18px 15px}.pill,.tag{border-radius:20px;padding:6px 10px;font-size:11px;font-weight:800;background:#f0e8d9;color:#70572f}.hero{background:radial-gradient(circle at 90% 10%,#c8a96e55,transparent 30%),linear-gradient(130deg,#101b2d,#30445c);color:white;border-radius:24px;padding:26px 22px;margin-bottom:16px}.hero small{color:#e5d1a6;font-weight:900;letter-spacing:1px}.hero h1{font-size:clamp(29px,6vw,42px);line-height:1.08;margin:9px 0}.hero p{color:#e4e8ee;line-height:1.5}.btn{background:var(--navy);color:white;border-radius:11px;padding:11px 14px;font-weight:800}.btn.gold{background:linear-gradient(130deg,#e5d2a6,#bd995b);color:#182335}.btn.soft{background:#f2eadc;color:#72572e}.btn.red{background:#fff0f0;color:#bd4848}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:16px;box-shadow:var(--shadow)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.exam{text-align:left;min-height:120px;display:flex;flex-direction:column;justify-content:space-between}.exam b{font-size:25px;color:var(--navy)}.exam span,.muted{color:var(--muted);font-size:12px}.section{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:22px 2px 11px}.section h2{font-size:20px;margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:15px}.stat{text-align:center}.stat b{display:block;font-size:23px}.stat span{font-size:11px;color:var(--muted)}.fire{background:#fff8ef;border-color:#ead7b7}.fire-row,.row{display:flex;align-items:center;gap:10px}.fire-icon{font-size:32px}.fire-info{flex:1}.fire-num{font-size:29px;font-weight:950}.bar{height:8px;background:#e9edf1;border-radius:20px;overflow:hidden;margin-top:10px}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#a1814b,#e2c58c)}.row>*{flex:1;min-width:0}.input{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff}.nav{position:fixed;bottom:0;left:0;right:0;background:#101b2df7;display:grid;grid-template-columns:repeat(6,1fr);padding:7px max(5px,calc((100vw - 920px)/2));z-index:8}.nav button{background:none;color:#c7cdd5;font-size:10px;font-weight:800;padding:5px 1px}.nav button.active{color:#e5d1a6}.nav span{display:block;font-size:18px;margin-bottom:2px}.hidden{display:none!important}.topic{display:flex;gap:9px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.topic label{flex:1}.topic input{accent-color:#9b7b48;width:18px;height:18px}.topic.done label{text-decoration:line-through;color:#9099a6}.subject{font-weight:900;margin:15px 0 5px}.planitem,.careeritem{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 0;border-bottom:1px solid var(--line)}.planitem small{display:block;color:var(--muted);margin-top:3px}.timer{font-size:55px;text-align:center;font-weight:950;font-variant-numeric:tabular-nums;margin:17px}.timer-mode{display:flex;gap:7px}.timer-mode button{flex:1;padding:9px;background:#f1eadc;border-radius:9px;color:#70572f;font-weight:800}.timer-mode .sel{background:var(--navy);color:white}.upload{border:2px dashed #c8b58e;padding:24px;text-align:center;border-radius:15px;background:#fcfaf6;display:block;cursor:pointer}.qimg{width:100%;max-height:300px;object-fit:contain;border-radius:10px}.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.package{padding:15px;border:1px solid var(--line);border-radius:17px;background:#fff}.package.premium{border:2px solid var(--gold)}.package h3{margin:5px 0}.price{font-size:24px;font-weight:950;color:#876a3b}.package ul{padding-left:17px;font-size:12px;line-height:1.7}.package button{width:100%}.toast{position:fixed;bottom:88px;left:50%;transform:translateX(-50%);background:#172335;color:#fff;padding:10px 14px;border-radius:10px;opacity:0;z-index:10}.toast.show{opacity:1}
+
+@media(max-width:650px){.packages{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+
+</style></head><body><div class="app">
+
+<header class="top"><div class="topin"><div class="brand"><span class="p">P</span>USUL<span class="a">A</span><small>EĞİTİM VE KARİYER KOÇLUĞU</small></div><span class="pill" id="examPill">YKS</span></div></header>
+
+<main>
+
+<section id="home"><div class="hero"><small id="heroExam">YKS SINAV KOÇUN</small><h1>Geleceğine yön ver.</h1><p>Hedefini belirle, planını oluştur, gelişimini takip et. Eğitimden kariyere yolculuğunda PUSULA yanında.</p><button class="btn gold" onclick="show('plan')">Planımı oluştur →</button></div>
+
+<div class="stats"><div class="card stat"><b id="doneStat">0</b><span>Tamamlanan konu</span></div><div class="card stat"><b id="hourStat">0s</b><span>Toplam çalışma</span></div><div class="card stat"><b id="streakStat">0</b><span>Günlük seri</span></div></div>
+
+<div class="section"><h2>Seri Ateşi 🔥</h2><button class="btn soft" onclick="show('timer')">Çalış</button></div><div class="card fire"><div class="fire-row"><div class="fire-icon">🔥</div><div class="fire-info"><b class="fire-num" id="fireStreak">0 gün</b><div class="muted">Rekor: <b id="bestStreak">0</b> gün</div></div></div><div class="bar"><i id="fireBar"></i></div><p class="muted" id="fireMessage">Bugün çalışarak serini başlat.</p></div>
+
+<div class="section"><h2>Çözemediğim Sorular</h2><button class="btn soft" onclick="show('questions')">Sorularım</button></div><div class="card row"><b id="questionHomeCount">0 soru</b><button class="btn" onclick="show('questions')">Soru ekle</button></div>
+
+<div class="section"><h2>Sınavını seç</h2></div><div class="grid" id="examGrid"></div><div class="section"><h2>Bugünkü hedef</h2></div><div class="card"><div class="row"><b id="todayText">0/3 konu tamamlandı</b><b id="todayPct">0%</b></div><div class="bar"><i id="todayBar"></i></div></div></section>
+
+<section id="topics" class="hidden"><div class="section"><h2 id="topicsTitle">Konular</h2><button class="btn soft" onclick="show('home')">Sınav seç</button></div><div class="card" id="topicsList"></div></section>
+
+<section id="plan" class="hidden"><div class="section"><div><h2>PUSULA Koçluk Paketleri</h2><p class="muted">Yıllık üyelik seçenekleri</p></div></div><div id="packageArea" class="packages">
+
+<div class="package"><h3>Ücretsiz</h3><div class="price">₺0</div><ul><li>Sınav seçimi</li><li>Hedef ve konu takibi</li><li>Günlük çalışma hedefi</li><li>Çalışma sayacı ve Seri Ateşi</li><li>Soru arşivi</li><li>Temel plan ve profil</li></ul><button class="btn soft" onclick="choose('Ücretsiz')">Ücretsiz Başla</button></div>
+
+<div class="package"><h3>Plus</h3><div class="price">₺99 <small>/ yıl</small></div><ul><li>Ücretsiz özellikleri</li><li>Haftalık kişisel program</li><li>Ders/konu analizleri</li><li>Deneme takibi ve net grafikleri</li><li>Akıllı tekrar ve hedef mesafesi</li><li><b>Ayda 2 online deneme</b></li></ul><button class="btn" onclick="choose('Plus')">Plus'ı Seç</button></div>
+
+<div class="package premium"><h3>Premium</h3><div class="price">₺199 <small>/ yıl</small></div><ul><li>Plus özelliklerinin tamamı</li><li>Hedef bölüm/puan takibi</li><li>Detaylı deneme analizi</li><li>Eksik konu ve risk uyarıları</li><li>Kişisel yol haritası</li><li>Gerçek koç desteği</li><li><b>Ayda 4 online deneme</b></li></ul><button class="btn gold" onclick="choose('Premium')">Premium'u Seç</button></div></div>
+
+<div id="activePackage" class="card hidden" style="margin-top:12px"><b id="packageName"></b><p id="packageDesc" class="muted"></p><b>Online deneme hakkı: <span id="examLeft">0</span></b><p class="muted">Deneme içerikleri ve ödeme entegrasyonu bu statik sürümde bağlı değildir.</p><button class="btn soft" onclick="useExam()">Deneme hakkı kullan</button><button class="btn" onclick="changePackage()">Paketi değiştir</button></div>
+
+<div class="section"><h2>Çalışma Planım</h2></div><div class="card"><div class="row"><input id="planTask" class="input" placeholder="Çalışma görevi"><input id="planMin" class="input" type="number" value="45" style="max-width:85px"><button class="btn" onclick="addPlan()">Ekle</button></div><div id="planList"></div></div></section>
+
+<section id="questions" class="hidden"><div class="section"><h2>Çözemediğim Sorular</h2><span class="tag" id="questionCount">0 soru</span></div><div class="card"><label class="upload" for="questionInput">📸<br><b>Soru fotoğrafı ekle</b><p class="muted">Galeriden seç veya kamerayla çek</p></label><input id="questionInput" type="file" accept="image/*" capture="environment" hidden onchange="addQuestion(this)"></div><div id="questionsList"></div></section>
+
+<section id="timer" class="hidden"><div class="section"><h2>Çalışma Sayacı</h2></div><div class="card"><div class="timer-mode"><button id="m25" class="sel" onclick="setTimer(25)">25 dk</button><button id="m50" onclick="setTimer(50)">50 dk</button><button id="mCustom" onclick="customTimer()">Özel</button></div><div class="timer" id="timerDisplay">25:00</div><div class="row"><button class="btn gold" id="timerBtn" onclick="toggleTimer()">Başlat</button><button class="btn soft" onclick="resetTimer()">Sıfırla</button></div></div></section>
+
+<section id="career" class="hidden"><div class="hero"><small>PUSULA KARİYER</small><h1>Eğitimden mesleğe.</h1><p>Üniversite tercihini ve kariyer hedeflerini planla, başvuru adımlarını takip et.</p></div><div class="card"><b>🎓 Üniversite / bölüm hedefim</b><input class="input" id="uni" placeholder="Üniversite veya bölüm" style="margin:9px 0"><button class="btn gold" onclick="saveCareer('uni')">Kaydet</button><p id="uniSaved" class="muted"></p><hr style="border:0;border-top:1px solid var(--line);margin:16px 0"><b>💼 Meslek hedefim</b><input class="input" id="job" placeholder="Örn. Uzman yardımcısı" style="margin:9px 0"><button class="btn gold" onclick="saveCareer('job')">Kaydet</button><p id="jobSaved" class="muted"></p></div><div class="section"><h2>Başvuru takip listem</h2></div><div class="card"><div class="row"><input id="careerTask" class="input" placeholder="Başvuru / takip görevi"><button class="btn" onclick="addCareer()">Ekle</button></div><div id="careerList"></div><p class="muted">Canlı ilan ve resmî başvuru bağlantısı için ayrıca veri entegrasyonu gerekir.</p></div></section>
+
+<section id="profile" class="hidden"><div class="section"><h2>Profilim & ilerlemem</h2></div><div class="card"><label class="muted">Adın</label><input id="profileName" class="input" placeholder="Adın"><label class="muted">E-posta</label><input id="profileEmail" class="input" placeholder="E-posta" style="margin:8px 0"><button class="btn gold" onclick="saveProfile()">Profili kaydet</button><p class="muted" id="profileMsg"></p><hr style="border:0;border-top:1px solid var(--line);margin:16px 0"><label class="muted">Hedef sınav</label><select id="examSelect" class="input" onchange="setExam(this.value)"></select><label class="muted">Günlük konu hedefi</label><input id="dailyGoal" class="input" type="number" min="1" max="30" onchange="saveGoal(this.value)"><div class="section"><h2>Genel ilerleme</h2><b id="overallPct">0%</b></div><div class="bar"><i id="overallBar"></i></div><p class="muted">Seri rekoru: <b id="profileBest">0</b> gün</p><button class="btn red" onclick="resetAll()">Tüm ilerlemeyi sıfırla</button></div></section>
+
+</main><nav class="nav"><button data-page="home" onclick="show('home')"><span>⌂</span>Ana Sayfa</button><button data-page="topics" onclick="show('topics')"><span>✓</span>Konular</button><button data-page="questions" onclick="show('questions')"><span>▧</span>Sorular</button><button data-page="timer" onclick="show('timer')"><span>◷</span>Sayaç</button><button data-page="plan" onclick="show('plan')"><span>☷</span>Plan</button><button data-page="career" onclick="show('career')"><span>◆</span>Kariyer</button></nav><div class="toast" id="toast"></div></div>
+
+<script>
+const DATA={
+
+YKS:{desc:"Üniversiteye hazırlık",subs:{"TYT Türkçe":["Sözcükte Anlam","Cümlede Anlam","Paragraf","Dil Bilgisi","Yazım Kuralları","Noktalama"],"TYT Matematik":["Temel Kavramlar","Sayılar","Bölünebilme","Üslü Sayılar","Köklü Sayılar","Denklem","Problemler","Kümeler","Fonksiyonlar"],"TYT Fen":["Fizik: Hareket","Fizik: Kuvvet","Kimya: Atom","Kimya: Karışımlar","Biyoloji: Hücre","Biyoloji: Kalıtım"],"TYT Sosyal":["Tarih: İlk Türk Devletleri","Tarih: Osmanlı","Coğrafya: Harita","Coğrafya: İklim","Felsefe","Din Kültürü"],"AYT Matematik":["Fonksiyonlar","Polinomlar","İkinci Dereceden Denklemler","Permütasyon-Kombinasyon","Logaritma","Diziler","Limit","Türev","İntegral"],"AYT Edebiyat":["Şiir Bilgisi","İslamiyet Öncesi","Divan Edebiyatı","Tanzimat","Servetifünun","Milli Edebiyat","Cumhuriyet"],"AYT Tarih":["Osmanlı Siyaseti","20. Yüzyıl Başları","Milli Mücadele","Atatürk Dönemi","Dünya Savaşı","Çağdaş Türk Dünyası"],"AYT Coğrafya":["Ekosistem","Nüfus","Ekonomik Faaliyetler","Türkiye'nin Yer Şekilleri","Bölgeler","Küresel Çevre Sorunları"]}},
+
+KPSS:{desc:"Kamu sınavı",subs:{"Türkçe":["Sözcükte Anlam","Cümlede Anlam","Paragraf","Dil Bilgisi","Anlatım Bozukluğu"],"Matematik":["Temel Kavramlar","Problemler","Oran-Orantı","Sayısal Mantık","Grafik-Tablo"],"Tarih":["İslamiyet Öncesi Türk Tarihi","Osmanlı Tarihi","Kurtuluş Savaşı","Atatürk İlkeleri","Çağdaş Türk Tarihi"],"Coğrafya":["Türkiye'nin Coğrafi Konumu","İklim","Nüfus","Tarım","Ulaşım"],"Vatandaşlık":["Hukukun Temel Kavramları","Anayasa","Yasama","Yürütme","Yargı"]}},
+
+ALES:{desc:"Lisansüstü hazırlık",subs:{"Sayısal":["Temel Kavramlar","Sayılar","Problemler","Sayısal Mantık","Tablo ve Grafik","Geometri"],"Sözel":["Sözcükte Anlam","Cümlede Anlam","Paragraf","Sözel Mantık","Anlatım"]}},
+
+DGS:{desc:"Dikey geçiş",subs:{"Sayısal":["Temel Kavramlar","Sayı Problemleri","Yaş Problemleri","Oran-Orantı","Sayısal Mantık","Geometri"],"Sözel":["Sözcükte Anlam","Cümlede Anlam","Paragraf","Sözel Mantık","Anlatım"]}},
+
+LGS:{desc:"Liseye geçiş",subs:{"Türkçe":["Sözcükte Anlam","Cümlede Anlam","Paragraf","Fiilimsi","Cümlenin Ögeleri","Yazım Kuralları"],"Matematik":["Çarpanlar ve Katlar","Üslü İfadeler","Kareköklü İfadeler","Veri Analizi","Olasılık","Cebirsel İfadeler","Doğrusal Denklemler","Eşitsizlikler"],"Fen Bilimleri":["Mevsimler ve İklim","DNA ve Genetik Kod","Basınç","Madde ve Endüstri","Basit Makineler","Enerji Dönüşümleri","Elektrik"],"İnkılap Tarihi":["Bir Kahraman Doğuyor","Millî Uyanış","Millî Bir Destan","Atatürkçülük","Demokratikleşme Çabaları","Atatürk Dönemi Dış Politika"],"Din Kültürü":["Kader ve Kaza","Zekât ve Sadaka","Din ve Hayat","Hz. Muhammed'in Örnekliği","Kur'an-ı Kerim"],"İngilizce":["Friendship","Teen Life","In the Kitchen","On the Phone","The Internet","Adventures"]}}
+
+};
+
+const base={exam:"YKS",done:{},plans:[],seconds:0,goal:3,streak:0,best:0,last:"",questions:[],pkg:null,used:0,month:"",career:{uni:"",job:"",tasks:[]},profile:{name:"",email:""}};
+
+let S;try{S={...base,...JSON.parse(localStorage.getItem("pusulaState")||"{}")};S.career={...base.career,...S.career};S.profile={...base.profile,...S.profile};S.done=S.done||{};S.plans=S.plans||[];S.questions=S.questions||[]}catch(e){S={...base}}
+
+const save=()=>localStorage.setItem("pusulaState",JSON.stringify(S)),$=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function toast(t){$("toast").textContent=t;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),1800)}
+
+function show(p){document.querySelectorAll("main>section").forEach(s=>s.classList.add("hidden"));$(p).classList.remove("hidden");document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===p));if(p==="topics")renderTopics();if(p==="plan")renderPlan();if(p==="questions")renderQuestions();if(p==="career")renderCareer();if(p==="profile")renderProfile();window.scrollTo(0,0);stats()}
+
+function renderHome(){let g=$("examGrid");g.innerHTML="";Object.entries(DATA).forEach(([k,v])=>{let b=document.createElement("button");b.className="card exam";b.innerHTML=`<b>${k}</b><strong>${v.desc}</strong><span>${Object.keys(v.subs).length} ders • Konuları takip et →</span>`;b.onclick=()=>{setExam(k);show("topics")};g.appendChild(b)});$("examPill").textContent=S.exam;$("heroExam").textContent=S.exam+" SINAV KOÇUN"}
+
+function setExam(v){S.exam=v;save();renderHome();renderProfile();toast(v+" seçildi")}
+
+function renderTopics(){let l=$("topicsList");l.innerHTML="";$("topicsTitle").textContent=S.exam+" — Dersler";Object.entries(DATA[S.exam].subs).forEach(([sub,ts])=>{let h=document.createElement("div");h.className="subject";h.textContent=sub;l.appendChild(h);ts.forEach(t=>{let k=S.exam+"|"+sub+"|"+t,d=!!S.done[k],r=document.createElement("div");r.className="topic"+(d?" done":"");r.innerHTML=`<input type="checkbox" ${d?"checked":""}><label>${esc(t)}</label><span class="tag">${d?"Tamam":"Bekliyor"}</span>`;r.querySelector("input").onchange=e=>{S.done[k]=e.target.checked;if(e.target.checked)study();save();renderTopics();stats()};l.appendChild(r)})})}
+
+function today(){return new Date().toLocaleDateString("en-CA")}
+
+function study(){let t=today();if(S.last===t)return;let diff=S.last?Math.round((new Date(t)-new Date(S.last))/86400000):0;S.streak=diff===1?S.streak+1:1;S.last=t;S.best=Math.max(S.best,S.streak);save()}
+
+function stats(){let total=0,n=0;Object.entries(DATA).forEach(([ex,v])=>Object.entries(v.subs).forEach(([s,ts])=>ts.forEach(t=>{total++;if(S.done[ex+"|"+s+"|"+t])n++})));$("doneStat").textContent=n;$("hourStat").textContent=Math.floor(S.seconds/3600)+"s";$("streakStat").textContent=S.streak;$("fireStreak").textContent=S.streak+" gün";$("bestStreak").textContent=S.best;$("profileBest").textContent=S.best;$("fireBar").style.width=(S.streak%7)/7*100+"%";$("fireMessage").textContent=S.last===today()?"Bugünkü çalışmanı tamamladın.":"Bugün çalışarak serini koru.";$("todayText").textContent=`Bugün ${Math.min(n,S.goal)}/${S.goal} konu tamamlandı`;$("todayPct").textContent=Math.round(Math.min(n,S.goal)/S.goal*100)+"%";$("todayBar").style.width=Math.min(100,n/S.goal*100)+"%";$("overallPct").textContent=Math.round(n/total*100)+"%";$("overallBar").style.width=n/total*100+"%";questionCount()}
+
+function choose(p){S.pkg=p;S.used=0;S.month=new Date().toISOString().slice(0,7);save();renderPlan();toast(p+" paketi seçildi. Ödeme sistemi henüz bağlı değil.")}
+
+function renderPlan(){let p=S.pkg;$("packageArea").classList.toggle("hidden",!!p);$("activePackage").classList.toggle("hidden",!p);if(p){$("packageName").textContent="PUSULA "+p+" paketi seçili";let lim=p==="Premium"?4:p==="Plus"?2:0;if(S.month!==new Date().toISOString().slice(0,7)){S.month=new Date().toISOString().slice(0,7);S.used=0;save()}$("examLeft").textContent=Math.max(0,lim-S.used);$("packageDesc").textContent=p==="Ücretsiz"?"Ücretsiz özelliklerin aktif.":p+" yıllık paket seçimin bu cihazda saklanıyor."}renderPlans()}
+
+function useExam(){let lim=S.pkg==="Premium"?4:S.pkg==="Plus"?2:0;if(!lim||S.used>=lim){toast("Kullanılabilir deneme hakkı yok.");return}toast("Online deneme içerikleri henüz bağlanmadı; hak düşülmedi.")}
+
+function changePackage(){S.pkg=null;save();renderPlan()}
+
+function renderPlans(){let l=$("planList");l.innerHTML="";if(!S.plans.length){l.innerHTML='<p class="muted">Henüz görev yok.</p>';return}S.plans.forEach((p,i)=>{let d=document.createElement("div");d.className="planitem";d.innerHTML=`<div><b>${esc(p.task)}</b><small>${p.min} dk • ${p.done?"Tamamlandı":"Bekliyor"}</small></div><div><button class="btn soft" onclick="togglePlan(${i})">${p.done?"Geri al":"Tamamla"}</button> <button class="btn red" onclick="delPlan(${i})">Sil</button></div>`;l.appendChild(d)})}
+
+function addPlan(){if(!S.pkg){toast("Önce paket seç.");return}let task=$("planTask").value.trim(),min=Math.max(5,+$("planMin").value||45);if(!task)return;S.plans.push({task,min,done:false});$("planTask").value="";save();renderPlans()}
+
+function togglePlan(i){let p=S.plans[i];p.done=!p.done;if(p.done){S.seconds+=p.min*60;study()}save();renderPlans();stats()}
+
+function delPlan(i){S.plans.splice(i,1);save();renderPlans()}
+
+function addQuestion(inp){let f=inp.files[0];if(!f)return;if(f.size>3e6){toast("Fotoğraf 3 MB'dan küçük olmalı.");return}let r=new FileReader();r.onload=e=>{S.questions.unshift({id:Date.now(),img:e.target.result,date:new Date().toLocaleDateString("tr-TR"),done:false});try{save();renderQuestions();toast("Soru kaydedildi")}catch(x){toast("Tarayıcı depolama alanı doldu.")}inp.value=""};r.readAsDataURL(f)}
+
+function renderQuestions(){let l=$("questionsList");l.innerHTML="";S.questions.forEach(q=>{let c=document.createElement("div");c.className="card";c.style.marginTop="12px";c.innerHTML=`<img class="qimg" src="${q.img}"><p class="muted">${q.date} • ${q.done?"Çözüldü":"Bekliyor"}</p><button class="btn soft" onclick="toggleQ(${q.id})">${q.done?"Tekrar çöz":"Çözdüm"}</button> <button class="btn red" onclick="delQ(${q.id})">Sil</button>`;l.appendChild(c)});if(!S.questions.length)l.innerHTML='<p class="muted">Henüz soru eklemedin.</p>'}
+
+function questionCount(){let n=S.questions.filter(q=>!q.done).length;$("questionCount").textContent=n+" soru";$("questionHomeCount").textContent=n+" soru"}
+
+function toggleQ(id){let q=S.questions.find(q=>q.id===id);q.done=!q.done;save();renderQuestions();questionCount()}
+
+function delQ(id){S.questions=S.questions.filter(q=>q.id!==id);save();renderQuestions();questionCount()}
+
+let t=1500,start=1500,tick=null,running=false;
+
+function fmt(s){return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+
+function setTimer(m){t=start=m*60;running=false;clearInterval(tick);$("timerDisplay").textContent=fmt(t);$("timerBtn").textContent="Başlat";["m25","m50","mCustom"].forEach(x=>$(x).classList.remove("sel"));$(m===25?"m25":"m50").classList.add("sel")}
+
+function customTimer(){let m=+prompt("Kaç dakika?","45");if(m>0&&m<=600){t=start=m*60;running=false;clearInterval(tick);$("timerDisplay").textContent=fmt(t);$("timerBtn").textContent="Başlat";["m25","m50","mCustom"].forEach(x=>$(x).classList.remove("sel"));$("mCustom").classList.add("sel")}}
+
+function toggleTimer(){if(running){clearInterval(tick);running=false;$("timerBtn").textContent="Devam et";return}running=true;$("timerBtn").textContent="Durdur";tick=setInterval(()=>{t--;$("timerDisplay").textContent=fmt(t);if(t<=0){clearInterval(tick);running=false;S.seconds+=start;study();save();stats();t=start;$("timerDisplay").textContent=fmt(t);$("timerBtn").textContent="Başlat";toast("Çalışma tamamlandı!")}},1000)}
+
+function resetTimer(){clearInterval(tick);running=false;t=start=1500;$("timerDisplay").textContent="25:00";$("timerBtn").textContent="Başlat"}
+
+function renderProfile(){$("examSelect").innerHTML=Object.keys(DATA).map(x=>`<option ${x===S.exam?"selected":""}>${x}</option>`).join("");$("dailyGoal").value=S.goal;$("profileName").value=S.profile.name;$("profileEmail").value=S.profile.email;stats()}
+
+function saveProfile(){S.profile.name=$("profileName").value;S.profile.email=$("profileEmail").value;save();$("profileMsg").textContent="Profil bu cihazda kaydedildi."}
+
+function saveGoal(v){S.goal=Math.max(1,Math.min(30,+v||3));save();stats()}
+
+function saveCareer(k){S.career[k]=$(k).value.trim();save();renderCareer()}
+
+function addCareer(){let v=$("careerTask").value.trim();if(!v)return;S.career.tasks.push({text:v,done:false});$("careerTask").value="";save();renderCareer()}
+
+function renderCareer(){$("uniSaved").textContent=S.career.uni?"Hedef: "+S.career.uni:"";$("jobSaved").textContent=S.career.job?"Hedef: "+S.career.job:"";let l=$("careerList");l.innerHTML="";S.career.tasks.forEach((x,i)=>{let d=document.createElement("div");d.className="careeritem";d.innerHTML=`<label><input type="checkbox" ${x.done?"checked":""} onchange="S.career.tasks[${i}].done=this.checked;save()"> ${esc(x.text)}</label><button class="btn red" onclick="S.career.tasks.splice(${i},1);save();renderCareer()">Sil</button>`;l.appendChild(d)})}
+
+function resetAll(){if(!confirm("Konu ilerlemesi, planlar, süre, sorular ve seri silinsin mi?"))return;let exam=S.exam,pkg=S.pkg;S={...base,exam,pkg,career:{...base.career},profile:S.profile};save();renderHome();renderPlan();renderQuestions();renderCareer();renderProfile();stats();toast("İlerleme sıfırlandı")}
+
+renderHome();renderProfile();renderPlan();renderQuestions();renderCareer();stats();show("home");
+
+</script></body></html>
